@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Learn With Ganesh</title>
+<meta name="title" content="Learn With Ganesh"/>
+<meta name="description" content="A website where I share my perspectives and my thoughts about life. "/>
+<meta name="keywords" content="Learn With Ganesh,quotes, book summary, coding,computer,philosophy"/>
+<meta name="robots" content="index, follow"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="language" content="English"/>
+<meta name="author" content="GANESH KUMAR"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+<style>
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+
+#block, #main{
+margin:10%;
+background:white;
+border-radius:2px;
+box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+}
+#main{
+ text-align:center;
+}
+
+#colorCode{
+font-size:140%;
+text-align:center;
+}
+
+#btn{
+font-size:120%;
+text-align:center;
+margin:auto;
+display:block;
+border:none;
+background:black;
+color:white;
+border-radius:2px;
+width:140px;
+font-weight:600;
+padding:2%;
+}
+
+</style>
+</head>
+<body>
+<div id="main">
+ <h2>LEARN WITH GANESH</h2>
+ 
+</div>
+
+<div id="block">
+<br>
+
+ <button onclick="generat()" id="btn">CHANGE</button>
+ <br>
+</div>
+ 
+<script>
+ 
+
+function generat(){
+ var randomNum=Math.floor(Math.random()*16777215);
+ var randomCode="#"+randomNum.toString(16);
+ 
+ document.body.style.backgroundColor=randomCode;
+
+}
+generat();
+</script>
+</body>
+</html>
